@@ -1,4 +1,4 @@
-using Lesnikowski.Mail;
+using Limilabs.Mail;
 namespace EricDaugherty.CSES.SmtpServer
 {
 	using System;

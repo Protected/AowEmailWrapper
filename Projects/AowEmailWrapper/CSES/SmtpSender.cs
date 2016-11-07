@@ -9,9 +9,10 @@ using AowEmailWrapper.Games;
 using AowEmailWrapper.ASG;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.ConfigFramework;
-using Lesnikowski.Client;
-using Lesnikowski.Mail;
-using Lesnikowski.Mail.Headers;
+using Limilabs.Client;
+using Limilabs.Client.SMTP;
+using Limilabs.Mail;
+using Limilabs.Mail.Headers;
 
 namespace AowEmailWrapper.CSES
 {
@@ -118,15 +119,12 @@ namespace AowEmailWrapper.CSES
                     {
                         case SSLType.None:
                             smtp.Connect(_host, _port);
-                            smtp.Ehlo();
                             break;
                         case SSLType.SSL:
                             smtp.ConnectSSL(_host, _port);
-                            smtp.Ehlo();
                             break;
                         case SSLType.TLS:
                             smtp.Connect(_host, _port);
-                            smtp.Ehlo();
                             smtp.StartTLS();
                             break;
                     }
@@ -142,11 +140,11 @@ namespace AowEmailWrapper.CSES
                         theGameEmail.Bcc.Add(theGameEmail.From[0]);
                     }
 
-                    smtp.SendMessage(theGameEmail, true);
+                    smtp.SendMessage(theGameEmail);
 
                     smtp.Close();
                 }
-                Trace.WriteLine(string.Format("EMAIL: [{0}] Message sent successfully.", theGameEmail.To[0].Address));
+                Trace.WriteLine(string.Format("EMAIL: [{0}] Message sent successfully.", theGameEmail.To[0].GetMailboxes()[0].Address));
                 RaiseOnEmailSentEvent(new SmtpSendResponse(theGameEmail, true));
             }
             catch (Exception ex)

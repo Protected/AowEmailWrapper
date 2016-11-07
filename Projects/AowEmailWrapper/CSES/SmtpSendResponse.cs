@@ -6,7 +6,7 @@ using System.IO;
 using System.Net.Mail;
 using System.Net;
 using AowEmailWrapper.Games;
-using Lesnikowski.Mail;
+using Limilabs.Mail;
 
 namespace AowEmailWrapper.CSES
 {

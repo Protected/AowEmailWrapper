@@ -10,8 +10,9 @@ using AowEmailWrapper.Helpers;
 using AowEmailWrapper.Classes;
 using AowEmailWrapper.ConfigFramework;
 using AowEmailWrapper.ASG;
-using Lesnikowski.Mail;
-using Lesnikowski.Mail.Headers;
+using Limilabs.Mail;
+using Limilabs.Mail.Headers;
+using Limilabs.Mail.MIME;
 
 namespace AowEmailWrapper.Pollers
 {

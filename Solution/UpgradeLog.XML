@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AowEmailWrapper">
+</Property><Property Name="Solution File" Value="C:\Projects\AowEmailWrapper\Solution\AowEmailWrapper.sln">
+</Property><Property Name="Date" Value="segunda-feira, 7 de Novembro de 2016">
+</Property><Property Name="Time" Value="11:27">
+</Property></Properties><Event ErrorLevel="0" Project="AowEmailWrapper" Source="..\Projects\AowEmailWrapper\AowEmailWrapper.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AowEmailWrapper" Source="..\Projects\AowEmailWrapper\AowEmailWrapper.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EricDaugherty.CSES" Source="..\Projects\EricDaugherty.CSES\EricDaugherty.CSES.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EricDaugherty.CSES" Source="..\Projects\EricDaugherty.CSES\EricDaugherty.CSES.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="zlib.net" Source="..\Projects\Zlib\zlib.net.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="zlib.net" Source="..\Projects\Zlib\zlib.net.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="FlimFlan.IconEncoder" Source="..\Projects\FlimFlan.IconEncoder\FlimFlan.IconEncoder.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="FlimFlan.IconEncoder" Source="..\Projects\FlimFlan.IconEncoder\FlimFlan.IconEncoder.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Mozilla.Autoconfig" Source="..\Projects\Mozilla.Autoconfig\Mozilla.Autoconfig.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Mozilla.Autoconfig" Source="..\Projects\Mozilla.Autoconfig\Mozilla.Autoconfig.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WrapperUninstallActions" Source="..\Projects\WrapperUninstallActions\WrapperUninstallActions.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WrapperUninstallActions" Source="..\Projects\WrapperUninstallActions\WrapperUninstallActions.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AowEmailWrapper.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AowEmailWrapper.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EricDaugherty.CSES" Source="..\Projects\EricDaugherty.CSES\EricDaugherty.CSES.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="FlimFlan.IconEncoder" Source="..\Projects\FlimFlan.IconEncoder\FlimFlan.IconEncoder.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Mozilla.Autoconfig" Source="..\Projects\Mozilla.Autoconfig\Mozilla.Autoconfig.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WrapperUninstallActions" Source="..\Projects\WrapperUninstallActions\WrapperUninstallActions.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="AowEmailWrapper" Source="..\Projects\AowEmailWrapper\AowEmailWrapper.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

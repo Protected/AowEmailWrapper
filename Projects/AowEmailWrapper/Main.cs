@@ -26,7 +26,9 @@ using AowEmailWrapper.Games;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.Localization;
 
-using Lesnikowski.Mail;
+using Limilabs.Mail;
+using Limilabs.Mail.MIME;
+using Limilabs.Mail.Headers;
 
 using Microsoft.Win32;
 
@@ -904,7 +906,7 @@ namespace AowEmailWrapper
                     DataManagerHelper.SaveConfig(_wrapperConfig);
                 }
 
-                notifyIcon.ShowBalloonTip(15000, theResponse.GameEmail.Subject, Translator.Translate(WrapperEmailSentSuccessKey, theResponse.GameEmail.To[0].Address), ToolTipIcon.Info);
+                notifyIcon.ShowBalloonTip(15000, theResponse.GameEmail.Subject, Translator.Translate(WrapperEmailSentSuccessKey, theResponse.GameEmail.To[0].GetMailboxes()[0].Address), ToolTipIcon.Info);
                 if (_wrapperConfig.PreferencesConfig != null && _wrapperConfig.PreferencesConfig.PlaySoundOnSend)
                 {
                     PlaySound(ConfigHelper.SentSound);
@@ -961,7 +963,7 @@ namespace AowEmailWrapper
         {
             RaiseEvent(_maximizeEvent, this, new EventArgs());
 
-            string errorMessage = Translator.Translate(WrapperEmailSentFailedKey, theResponse.GameEmail.Subject, theResponse.GameEmail.To[0].Address);
+            string errorMessage = Translator.Translate(WrapperEmailSentFailedKey, theResponse.GameEmail.Subject, theResponse.GameEmail.To[0].GetMailboxes()[0].Address);
             ApplicationException showException = new ApplicationException(errorMessage, theResponse.Exception);
 
             ExceptionMessageBox box = new ExceptionMessageBox(showException);
@@ -1206,7 +1208,7 @@ namespace AowEmailWrapper
                         IMail theEmail = ResendHelper.Load(activity.FileName);
                         if (theEmail != null && theEmail.To.Count > 0)
                         {
-                            string newToAddress = theEmail.To[0].Address;
+                            string newToAddress = theEmail.To[0].GetMailboxes()[0].Address;
 
                             Image gameTypeImage = null;
                             string gameType = activity.GameType.ToString();
@@ -1217,10 +1219,10 @@ namespace AowEmailWrapper
 
                             if (InputBox.Show(activity.FileName, Translator.Translate(WrapperResendToKey), ref newToAddress, gameTypeImage).Equals(DialogResult.OK))
                             {
-                                if (!newToAddress.Equals(theEmail.To[0].Address, StringComparison.InvariantCultureIgnoreCase))
+                                if (!newToAddress.Equals(theEmail.To[0].GetMailboxes()[0].Address, StringComparison.InvariantCultureIgnoreCase))
                                 {
                                     theEmail.To.Clear();
-                                    theEmail.To.Add(new Lesnikowski.Mail.Headers.MailBox(newToAddress));
+                                    theEmail.To.Add(new MailBox(newToAddress));
                                 }
 
                                 _smtpSender.SendMessage(theEmail);

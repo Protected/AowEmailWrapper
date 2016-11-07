@@ -9,10 +9,13 @@ using AowEmailWrapper.Games;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.ConfigFramework;
 using AowEmailWrapper.Pollers.MessageStore;
-using Lesnikowski.Client;
-using Lesnikowski.Mail;
-using Lesnikowski.Mail.Headers;
-using Lesnikowski.Mail.Headers.Constants;
+using Limilabs.Client;
+using Limilabs.Client.POP3;
+using Limilabs.Mail;
+using Limilabs.Mail.Headers;
+using Limilabs.Mail.MIME;
+
+//using Limilabs.Mail.Headers.Constants;
 
 namespace AowEmailWrapper.Pollers
 {
@@ -79,7 +82,7 @@ namespace AowEmailWrapper.Pollers
                         {
                             //string fileName;
 
-                            string eml = pop3.GetMessageByUID(uid);
+                            byte[] eml = pop3.GetMessageByUID(uid);
                             IMail email = new MailBuilder().CreateFromEml(eml); //SpoolEmlViaDisk(pop3.GetMessageByUID(uid), out fileName);
 
                             MessageStoreMessage theMessage = new MessageStoreMessage(uid);

@@ -7,7 +7,8 @@ using System.Diagnostics;
 using System.Text.RegularExpressions;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.Games;
-using Lesnikowski.Mail;
+using Limilabs.Mail;
+using Limilabs.Mail.MIME;
 
 namespace AowEmailWrapper.ASG
 {

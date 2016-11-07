@@ -4,7 +4,7 @@ namespace EricDaugherty.CSES.SmtpServer
 	using System.Net.Sockets;
 	using System.Text;
     using System.Diagnostics;
-    using Lesnikowski.Mail;
+    using Limilabs.Mail;
 	
 	/// <summary>
 	/// Maintains the current state for a SMTP client connection.

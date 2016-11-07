@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading;
 using System.Net;
 using Mozilla.Autoconfig;
+using Limilabs.Client;
+using Limilabs.Client.IMAP;
+using Limilabs.Client.POP3;
+using Limilabs.Client.SMTP;
 
 namespace AowEmailWrapper.Classes
 {
@@ -117,7 +121,7 @@ namespace AowEmailWrapper.Classes
         {
             try
             {
-                using (Lesnikowski.Client.IMAP.Imap imap = new Lesnikowski.Client.IMAP.Imap())
+                using (Imap imap = new Imap())
                 {
                     switch (_incomingServer.SocketType)
                     {
@@ -137,7 +141,7 @@ namespace AowEmailWrapper.Classes
                     _isSuccess = true;
                 }
             }
-            catch (Lesnikowski.Client.ServerException ex)
+            catch (ServerException ex)
             {
                 _isSuccess = ex.InnerException == null;
             }
@@ -152,7 +156,7 @@ namespace AowEmailWrapper.Classes
         {
             try
             {
-                using (Lesnikowski.Client.Pop3 pop3 = new Lesnikowski.Client.Pop3())
+                using (Limilabs.Client.POP3.Pop3 pop3 = new Limilabs.Client.POP3.Pop3())
                 {
                     switch (_incomingServer.SocketType)
                     {
@@ -172,7 +176,7 @@ namespace AowEmailWrapper.Classes
                     _isSuccess = true;
                 }
             }
-            catch (Lesnikowski.Client.ServerException ex)
+            catch (ServerException ex)
             {
                 _isSuccess = ex.InnerException == null;
             }
@@ -187,19 +191,17 @@ namespace AowEmailWrapper.Classes
         {
             try
             {
-                using (Lesnikowski.Client.Smtp smtp = new Lesnikowski.Client.Smtp())
+                using (Smtp smtp = new Smtp())
                 {
                     switch (_outgoingServer.SocketType)
                     {
                         case SocketType.SSL:
                             smtp.ConnectSSL(_outgoingServer.Hostname, _outgoingServer.Port);
-                            smtp.Ehlo();
                             break;
                         case SocketType.Unknown:
                         case SocketType.Plain:
                         case SocketType.STARTTLS:
                             smtp.Connect(_outgoingServer.Hostname, _outgoingServer.Port);
-                            smtp.Ehlo();
                             _outgoingServer.SocketType = SocketType.Plain;
                             smtp.StartTLS();
                             _outgoingServer.SocketType = SocketType.STARTTLS;
@@ -209,7 +211,7 @@ namespace AowEmailWrapper.Classes
                     _isSuccess = true;
                 }
             }
-            catch (Lesnikowski.Client.ServerException ex)
+            catch (ServerException ex)
             {
                 _isSuccess = ex.InnerException == null;
             }

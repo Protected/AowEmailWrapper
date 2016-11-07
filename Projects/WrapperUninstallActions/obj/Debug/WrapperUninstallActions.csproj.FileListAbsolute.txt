@@ -1,0 +1,4 @@
+C:\Projects\AowEmailWrapper\Projects\WrapperUninstallActions\bin\Debug\WrapperUninstallActions.dll
+C:\Projects\AowEmailWrapper\Projects\WrapperUninstallActions\bin\Debug\WrapperUninstallActions.pdb
+C:\Projects\AowEmailWrapper\Projects\WrapperUninstallActions\obj\Debug\WrapperUninstallActions.dll
+C:\Projects\AowEmailWrapper\Projects\WrapperUninstallActions\obj\Debug\WrapperUninstallActions.pdb

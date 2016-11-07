@@ -8,7 +8,8 @@ using System.Diagnostics;
 using AowEmailWrapper.ASG;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.ConfigFramework;
-using Lesnikowski.Mail;
+using Limilabs.Mail;
+using Limilabs.Mail.MIME;
 
 namespace AowEmailWrapper.Games
 {

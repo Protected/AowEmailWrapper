@@ -1,0 +1,4 @@
+C:\Projects\AowEmailWrapper\Projects\Mozilla.Autoconfig\bin\Debug\Mozilla.Autoconfig.dll
+C:\Projects\AowEmailWrapper\Projects\Mozilla.Autoconfig\bin\Debug\Mozilla.Autoconfig.pdb
+C:\Projects\AowEmailWrapper\Projects\Mozilla.Autoconfig\obj\Debug\Mozilla.Autoconfig.dll
+C:\Projects\AowEmailWrapper\Projects\Mozilla.Autoconfig\obj\Debug\Mozilla.Autoconfig.pdb

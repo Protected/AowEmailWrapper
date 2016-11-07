@@ -12,10 +12,10 @@ using AowEmailWrapper.Games;
 using AowEmailWrapper.ConfigFramework;
 using AowEmailWrapper.Helpers;
 using AowEmailWrapper.Pollers.MessageStore;
-using Lesnikowski.Client.IMAP;
-using Lesnikowski.Mail;
-using Lesnikowski.Mail.Headers;
-using Lesnikowski.Mail.Headers.Constants;
+using Limilabs.Client.IMAP;
+using Limilabs.Mail;
+using Limilabs.Mail.Headers;
+//using Limilabs.Mail.Headers.Constants;
 
 namespace AowEmailWrapper.Pollers
 {
@@ -70,7 +70,7 @@ namespace AowEmailWrapper.Pollers
 
                     imap.SelectInbox();
 
-                    List<long> serverUids = imap.SearchFlag(Flag.Unseen);
+                    List<long> serverUids = imap.Search(Flag.Unseen);
 
                     MessageStoreCollection localMessageStore = MessageStoreManager.LoadLocalMessageStore(_username, _host);
 
@@ -84,7 +84,7 @@ namespace AowEmailWrapper.Pollers
                         {
                             //string fileName;
 
-                            string eml = imap.GetMessageByUID(uid);
+                            byte[] eml = imap.GetMessageByUID(uid);
                             IMail email = new MailBuilder().CreateFromEml(eml); //SpoolEmlViaDisk(imap.GetMessageByUID(uid), out fileName);
 
                             if (ProcessEmailAttachments(email) > 0)

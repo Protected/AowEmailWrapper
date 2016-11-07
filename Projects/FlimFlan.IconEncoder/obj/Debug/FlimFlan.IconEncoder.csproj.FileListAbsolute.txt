@@ -1,0 +1,4 @@
+C:\Projects\AowEmailWrapper\Projects\FlimFlan.IconEncoder\bin\Debug\FlimFlan.IconEncoder.dll
+C:\Projects\AowEmailWrapper\Projects\FlimFlan.IconEncoder\bin\Debug\FlimFlan.IconEncoder.pdb
+C:\Projects\AowEmailWrapper\Projects\FlimFlan.IconEncoder\obj\Debug\FlimFlan.IconEncoder.dll
+C:\Projects\AowEmailWrapper\Projects\FlimFlan.IconEncoder\obj\Debug\FlimFlan.IconEncoder.pdb

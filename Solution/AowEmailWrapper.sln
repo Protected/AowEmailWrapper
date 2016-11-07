@@ -1,13 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AowEmailWrapper", "..\Projects\AowEmailWrapper\AowEmailWrapper.csproj", "{1EE06EC1-97C0-4CFA-8F23-A9151214C13F}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0AF14720-7178-4673-9875-DAA7ACD51074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EricDaugherty.CSES", "..\Projects\EricDaugherty.CSES\EricDaugherty.CSES.csproj", "{A5194231-69A6-4578-9A69-B482F8C346A1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Install Kit", "Install Kit", "{D3BDB817-5B62-4296-ABFF-109279B6B43B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AowEmailWrapper", "..\Projects\AowEmailWrapper\AowEmailWrapper.csproj", "{1EE06EC1-97C0-4CFA-8F23-A9151214C13F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EricDaugherty.CSES", "..\Projects\EricDaugherty.CSES\EricDaugherty.CSES.csproj", "{A5194231-69A6-4578-9A69-B482F8C346A1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zlib.net", "..\Projects\Zlib\zlib.net.csproj", "{0C89B7A2-A218-49E4-B545-5B044A45F977}"
 EndProject

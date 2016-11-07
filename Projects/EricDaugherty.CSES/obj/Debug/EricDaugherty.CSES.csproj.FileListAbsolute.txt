@@ -1,0 +1,6 @@
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\bin\Debug\EricDaugherty.CSES.dll
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\bin\Debug\EricDaugherty.CSES.pdb
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\bin\Debug\Mail.dll
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\obj\Debug\EricDaugherty.CSES.csprojResolveAssemblyReference.cache
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\obj\Debug\EricDaugherty.CSES.dll
+C:\Projects\AowEmailWrapper\Projects\EricDaugherty.CSES\obj\Debug\EricDaugherty.CSES.pdb

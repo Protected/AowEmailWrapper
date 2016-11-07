@@ -11,7 +11,8 @@ using AowEmailWrapper.ASG;
 using AowEmailWrapper.Classes;
 using AowEmailWrapper.Games;
 using AowEmailWrapper.Helpers;
-using Lesnikowski.Mail;
+using Limilabs.Mail;
+using Limilabs.Mail.MIME;
 
 namespace AowEmailWrapper.CSES
 {

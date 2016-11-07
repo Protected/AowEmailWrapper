@@ -1,0 +1,4 @@
+C:\Projects\AowEmailWrapper\Projects\Zlib\bin\Debug\zlib.net.dll
+C:\Projects\AowEmailWrapper\Projects\Zlib\bin\Debug\zlib.net.pdb
+C:\Projects\AowEmailWrapper\Projects\Zlib\obj\Debug\zlib.net.dll
+C:\Projects\AowEmailWrapper\Projects\Zlib\obj\Debug\zlib.net.pdb

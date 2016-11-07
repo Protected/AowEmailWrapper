@@ -7,8 +7,8 @@ namespace EricDaugherty.CSES.SmtpServer
 	using System.Text.RegularExpressions;
     using System.Diagnostics;
 	using EricDaugherty.CSES.Common;
-    using Lesnikowski.Mail;
-    using Lesnikowski.Mail.Headers;
+    using Limilabs.Mail;
+    using Limilabs.Mail.Headers;
 	
 	/// <summary>
 	/// SMTPProcessor handles a single SMTP client connection.  This
@@ -506,7 +506,7 @@ namespace EricDaugherty.CSES.SmtpServer
                 line = context.ReadLine();
             }
 
-            context.Message = new MailBuilder().CreateFromEml(data.ToString());
+            context.Message = new MailBuilder().CreateFromEml(Encoding.UTF8.GetBytes(data.ToString()));
 
             // Spool the message
             if (messageSpool == null)
